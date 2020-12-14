@@ -7,9 +7,9 @@ click==7.1.2
 cymem==2.0.5
 dataclasses==0.8
 en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
-Flask==1.1.2
+Flask==1.0.2
 future==0.18.2
-waitress
+gunicorn==19.9.0
 idna==2.10
 importlib-metadata==3.1.1
 itsdangerous==1.1.0
