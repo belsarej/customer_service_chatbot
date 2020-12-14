@@ -3,7 +3,8 @@ WORKDIR /customer_service_chatbot
 COPY . ./
 RUN pip install -r requirements.txt 
 RUN python3 -m spacy download en
+# Expose port 5000
 EXPOSE 5000
-ENTRYPONIT ["gunicorn"]
-#CMD exec gunicorn --bind :$PORT --workers 1 --worker-class uvicorn.workers.UvicornWorker  --threads 8 app:app
-CMD ["app:app"]
+ENV PORT 5000
+# Use gunicorn as the entrypoint
+CMD exec gunicorn --bind :$PORT app:app --workers 1 --threads 1 --timeout 60
