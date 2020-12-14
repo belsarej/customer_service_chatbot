@@ -24,10 +24,10 @@ class ModelDecorator(nn.Module):
 
 
 customer_service_models = {
-    'amazon': ('trained-model/amazon', 10),
+    'amazon': ('trained-models/amazon', 10),
 }
 
-model_path = 'trained-model/amazon'
+model_path = 'trained-models/amazon'
 epoch = 10
 
 def get_model_path(dir_path, epoch):
