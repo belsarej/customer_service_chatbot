@@ -1,4 +1,3 @@
-
 -f https://download.pytorch.org/whl/torch_stable.html
 blis==0.7.4
 catalogue==1.0.0
